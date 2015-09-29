@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'icons';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/icons.woff') format('woff');
+}
+
+.icon:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before { content: '\e800'; }
+.icon-stop:before { content: '\e801'; }
+.icon-pause:before { content: '\e802'; }
+.icon-config:before { content: '\e803'; }
+.icon-edit:before { content: '\e804'; }
+.icon-delete:before { content: '\e805'; }
+.icon-back:before { content: '\e806'; }
+.icon-check:before { content: '\e807'; }
+.icon-uncheck:before { content: '\e808'; }

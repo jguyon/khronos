@@ -1,0 +1,4 @@
+node_modules/
+static/
+webpack-stats.json
+npm-debug.log
