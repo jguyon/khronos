@@ -29,10 +29,12 @@ app.get('/', (req, res) => {
   ));
 });
 
-app.listen(process.env.PORT, (err) => {
+const port = __DEVELOPMENT__ ? 4001 : process.env.PORT;
+
+app.listen(port, (err) => {
   if (err) {
     console.error(err);
   }
 
-  console.info(`Listening to port ${process.env.PORT}`);
+  console.info(`Listening to port ${port}`);
 });
