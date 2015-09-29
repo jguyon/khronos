@@ -1,4 +1,4 @@
-import Style from '.';
+import Style from '../styles';
 
 const BASE_STYLE = Style.registerStyle({
   boxSizing: 'border-box'
