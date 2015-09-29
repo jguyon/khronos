@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/server.js",
+    "server": "node ./bin/server.js",
     "build": "webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
+    "start": "npm run build && npm run server",
     "postinstall": "webpack --display-error-details --config webpack/prod.config.js",
     "watch": "node ./webpack/webpack-dev-server",
     "dev": "concurrent --kill-others \"npm run watch\" \"npm run start\"",
